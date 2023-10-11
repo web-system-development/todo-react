@@ -10,7 +10,7 @@ const TodoList = ({ todos, title }: TodoListProps) => {
   return (
     <div className="mx-auto justify-center items-center">
       <h1 className="text-2xl">{title}</h1>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
         {todos?.map(({ id, name, isComplete }) => (
           <TodoCard id={id} name={name} key={id} isComplete={isComplete} />
         ))}

@@ -25,7 +25,7 @@ const TodoCard = ({ name, isComplete, id }: Todo) => {
   } = useEditTodo(id!!, isComplete, name);
 
   return (
-    <div className="card bg-neutral text-neutral-content pb-4 pr-4">
+    <div className="card bg-neutral text-neutral-content pb-4 pr-4 my-4 mx-2">
       <div className={`card-body ${checked && "line-through"}`}>
         <input
           type="checkbox"
